@@ -1,12 +1,12 @@
-SERVEROUTPUT ON;
+SET SERVEROUTPUT ON;
 
 DECLARE
-    marks NUMBER := 65;
+    marks NUMBER := 50;
 BEGIN
-    IF marks >= 50 THEN
-        DBMS_OUTPUT.PUT_LINE('Student has Passed');
+    IF marks >= 40 THEN
+        DBMS_OUTPUT.PUT_LINE('PASS');
     ELSE
-        DBMS_OUTPUT.PUT_LINE('Student has Failed');
+        DBMS_OUTPUT.PUT_LINE('FAIL');
     END IF;
 END;
 /
