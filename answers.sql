@@ -4,9 +4,9 @@ DECLARE
     marks NUMBER := 65;
 BEGIN
     IF marks >= 50 THEN
-        DBMS_OUTPUT.PUT_LINE('PASS');
+        DBMS_OUTPUT.PUT_LINE('PASSED');
     ELSE
-        DBMS_OUTPUT.PUT_LINE('FAIL');
+        DBMS_OUTPUT.PUT_LINE('FAILED');
     END IF;
 END;
 /
